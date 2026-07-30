@@ -82,14 +82,20 @@ a {
 /***** Header ***********/
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 30px;
 }
 
 nav {
     display: flex;
     align-items: center;
+}
+
+.entete-logo{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo{
