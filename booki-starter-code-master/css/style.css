@@ -18,6 +18,15 @@ body {
     justify-content: center;
 }
 
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size : 16 px;
+}
+
+h2{
+    font-size: 14px;
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -188,6 +197,20 @@ nav {
     border-right: 1px solid var(--filter-bg-color);
     background-color: var(--main-bg-color);
     border-radius: 18px 0px 0px 18px;
+}
+
+.filtres {
+    border : 2px solid red;
+    display :flex;
+    flex-direction:row;
+    list-style: none;
+    font-size: 14px;
+}
+
+.choix-filtre {
+    border: 2px solid green;
+    font-size:14px;
+    font-weight: 700;
 }
 
 /****** Hebergements ***********
