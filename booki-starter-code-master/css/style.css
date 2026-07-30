@@ -70,7 +70,7 @@ a {
     padding: 30px;
     box-sizing: border-box;
 }
-
+/***** Header ***********/
 header {
     display: flex;
     justify-content: space-between;
@@ -181,6 +181,13 @@ nav {
     background-color: #0051cc;
 }
 
+.fa-location-dot {
+    color: var(--main-color);
+    padding: 30px;
+    border-right: 1px solid var(--filter-bg-color);
+    background-color: var(--main-bg-color);
+    border-radius: 18px 0px 0px 18px;
+}
 /****** Hebergements ***********
 .hebergements {
     width: 65%;
