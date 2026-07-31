@@ -316,6 +316,11 @@ nav {
 }
 
 /********Activités***************/
+
+.activites{
+    margin-top: 40px;
+    padding: 40px;
+}
 .activites-cards {
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -332,7 +337,26 @@ nav {
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    }
 
+/**********Footer****************/
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 300px;
+   background-color: var(--main-bg-color);
+    
+   
+}
+.nav-footer{
+    list-style: none;
+    margin: 0;
+    padding-top: 10px;
+    
+}
+.nav-list-footer{
+    padding-top: 10px;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
