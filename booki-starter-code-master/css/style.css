@@ -198,10 +198,27 @@ nav {
     cursor: pointer;
     transition: background-color 0.2s ease;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .search-bar button:hover {
     background-color: #0051cc;
+}
+
+.search-bar button .search-button-icon {
+    display: none;
+    color: white;
+}
+
+.search-bar button .search-button-text {
+    display: inline;
+}
+
+.search-bar button i {
+    color: white;
 }
 
 .fa-location-dot {
@@ -397,5 +414,130 @@ footer{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container {
+        padding: 0 20px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        gap: 20px;
+    }
+
+    .entete-logo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav-list {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .nav-item a {
+        padding-top: 12px;
+    }
+
+    .entete {
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    .entete h1 {
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+    .entete p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 100%;
+        min-height: 56px;
+        padding: 0;
+        gap: 0;
+    }
+
+    .search-input {
+        min-width: 0;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .search-input input {
+        font-size: 15px;
+    }
+
+    .search-bar button {
+        width: auto;
+        padding: 0 18px;
+        border-radius: 0 18px 18px 0;
+        min-height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-bar button .search-button-text {
+        display: none;
+    }
+
+    .search-bar button .search-button-icon {
+        display: inline;
+        font-size: 16px;
+    }
+
+    .search-bar button i {
+        font-size: 16px;
+    }
+
+    .fa-location-dot {
+        border-right: none;
+        border-radius: 18px 0 0 18px;
+        padding: 0 14px;
+        color:white;
+    }
+
+    .filtres {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .filtres .nav-list {
+        width: 100%;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .choix-filtre {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 140px;
+    }
+
+    .en-tete-information {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-top: 16px;
+    }
+
+    .en-tete-information p {
+        margin: 0;
+        font-size: 14px;
+    }
 }
