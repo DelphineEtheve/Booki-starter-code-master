@@ -428,7 +428,7 @@ footer{
 
     .entete-logo {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 16px;
     }
 
@@ -441,8 +441,13 @@ footer{
     }
 
     .nav-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
         gap: 16px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .nav-item a {
