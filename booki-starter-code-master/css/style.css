@@ -582,6 +582,10 @@ footer{
     }
 
     /****** Hebergements And Populaires sur Mobile***********/
+   .card-txt, .card-rating {
+        padding-left: 10px;
+   }
+
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column;
@@ -612,15 +616,25 @@ footer{
         width: 100%;
     }
 
-    .activites-cards {
-        grid-template-columns: 1fr;
-    }
-
     .hebergements-and-populaires .hebergements {
         margin-top: 10px;
         background-color: transparent;
         border-radius: 0;
         padding: 0;
+    }
+/****** Activités sur Mobile ***********/
+    .activites {
+        margin-top: 60px;
+        padding: 0;
+    }
+
+    .activites-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .activites img {
+        width: 100%;
+        height: 200px;
     }
 
 }
