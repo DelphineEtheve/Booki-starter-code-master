@@ -20,7 +20,7 @@ body {
 
 h1{
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 h2{
@@ -41,7 +41,6 @@ a {
 
 .section-title {
     margin: 0;
-    font-size: 22px;
 }
 
 .card {
@@ -53,10 +52,6 @@ a {
 
 .card img {
     object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
 }
 
 .euro {
@@ -566,7 +561,6 @@ footer{
     .filtres .choix-filtre:first-child i {
         display: none;
     }
-
     .en-tete-information {
         display: flex;
         align-items: center;
@@ -578,5 +572,38 @@ footer{
         margin: 0;
         font-size: 14px;
         line-height: 1.4;
+    }
+
+    /****** Hebergements And Populaires sur Mobile***********/
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .populaires {
+        order: -1;
+        padding-bottom: 10px
+    }
+
+    .populaires-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .activites-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hebergements{
+        margin-top: 10px;
     }
 }
