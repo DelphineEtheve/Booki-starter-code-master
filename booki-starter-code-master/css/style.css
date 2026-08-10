@@ -418,6 +418,9 @@ footer{
         padding: 0 20px;
     }
 
+    h1{
+        font-size: 20px;
+    }
     header {
         display: flex;
         flex-direction: column;
@@ -460,7 +463,6 @@ footer{
     }
 
     .entete h1 {
-        font-size: 24px;
         line-height: 1.25;
     }
 
@@ -518,25 +520,56 @@ footer{
     }
 
     .filtres {
-        display: flex;
         width: 100%;
-        flex-wrap: wrap;
-        gap: 10px;
     }
 
     .filtres .nav-list {
         width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
-        flex-wrap: wrap;
     }
 
     .choix-filtre {
-        flex: 1 1 calc(50% - 10px);
-        min-width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 12px 16px;
+        border-radius: 999px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+        min-width: 0;
+        transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .choix-filtre:hover {
+        background-color: var(--filter-bg-color);
+    }
+
+    .filtres .choix-filtre:first-child {
+        grid-column: 1 / -1;
+        padding: 0;
+        background: transparent;
+        color: black;
+        font-size: 16px;
+        justify-content: flex-start;
+    }
+
+    .filtres .choix-filtre:first-child a {
+        pointer-events: none;
+    }
+
+    .filtres .choix-filtre:first-child i {
+        display: none;
     }
 
     .en-tete-information {
-        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
         gap: 10px;
         padding-top: 16px;
     }
@@ -544,5 +577,6 @@ footer{
     .en-tete-information p {
         margin: 0;
         font-size: 14px;
+        line-height: 1.4;
     }
 }
