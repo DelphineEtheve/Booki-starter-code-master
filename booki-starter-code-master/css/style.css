@@ -20,7 +20,7 @@ body {
 
 h1{
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 h2{
@@ -41,7 +41,6 @@ a {
 
 .section-title {
     margin: 0;
-    font-size: 22px;
 }
 
 .card {
@@ -53,10 +52,6 @@ a {
 
 .card img {
     object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
 }
 
 .euro {
@@ -198,10 +193,27 @@ nav {
     cursor: pointer;
     transition: background-color 0.2s ease;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .search-bar button:hover {
     background-color: #0051cc;
+}
+
+.search-bar button .search-button-icon {
+    display: none;
+    color: white;
+}
+
+.search-bar button .search-button-text {
+    display: inline;
+}
+
+.search-bar button i {
+    color: white;
 }
 
 .fa-location-dot {
@@ -333,7 +345,7 @@ nav {
 
 .activites img{ 
     width:100%;
-    height: 520px;
+    height: 300px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -397,5 +409,269 @@ footer{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container {
+        padding: 0 20px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        gap: 20px;
+    }
+
+    .entete-logo {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: nowrap;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .nav-item a {
+        padding-top: 12px;
+        padding-bottom: 8px;
+    }
+
+    .nav-item a::before {
+        top: 100%;
+        transform: translateY(0);
+    }
+
+    .entete {
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    .entete h1 {
+        line-height: 1.25;
+    }
+
+    .entete p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 100%;
+        min-height: 56px;
+        padding: 0;
+        gap: 0;
+    }
+
+    .search-input {
+        min-width: 0;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .search-input input {
+        font-size: 15px;
+    }
+
+    .search-bar button {
+        width: auto;
+        padding: 0 18px;
+        border-radius: 18px 18px 18px 18px;
+        min-height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-bar button .search-button-text {
+        display: none;
+    }
+
+    .search-bar button .search-button-icon {
+        display: inline;
+        font-size: 16px;
+    }
+
+    .search-bar button i {
+        font-size: 16px;
+    }
+
+    .fa-location-dot {
+        border-right: none;
+        border-radius: 18px 0px 0px 18px;
+        padding: 0 14px;
+        color:white;
+    }
+
+    .filtres {
+        width: 100%;
+    }
+
+    .filtres .nav-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .choix-filtre {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 10px 10px;
+        border-radius: 999px;
+        background-color: transparent;
+         border: 2px solid var(--main-bg-color);
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+        min-width: 0;
+        transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .choix-filtre:hover {
+        background-color: var(--filter-bg-color);
+    }
+
+    .filtres .choix-filtre:first-child {
+        grid-column: 1 / -1;
+        padding: 0;
+        background: transparent;
+        border: 1px solid transparent;
+        color: black;
+        font-size: 16px;
+        justify-content: flex-start;
+    }
+
+    .filtres .choix-filtre:first-child a {
+        pointer-events: none;
+    }
+
+    .filtres .choix-filtre:first-child i {
+        display: none;
+    }
+    .en-tete-information {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top: 16px;
+    }
+
+    .en-tete-information p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /****** Hebergements And Populaires sur Mobile***********/
+   .card-txt, .card-rating {
+        padding-left: 10px;
+   }
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .populaires,
+    .hebergements-and-populaires section.populaires {
+        order: -1;
+        width: calc(100% + 60px);
+        margin: 0 -30px;
+        padding: 20px 20px 10px;
+        background-color: var(--main-bg-color);
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+
+    .populaires-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        margin-top: 10px;
+        background-color: transparent;
+        border-radius: 0;
+        padding: 0;
+    }
+/****** Activités sur Mobile ***********/
+    .activites {
+        margin-top: 60px;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+    .activites-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .activites img {
+        width: 100%;
+        height: 200px;
+    }
+/******** Footer sur Mobile ***********/
+    footer {
+        flex-direction: column;
+        align-items: left;
+        padding: 20px 0;
+    }
+
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .nav-footer li {
+        margin: 0;
+        padding: 0px;
+    }
+
+    
+    .nav-list-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list-footer h2 {
+        margin: 0 0 0px;
+    }
+
+    .nav-list-footer a {
+        margin: 0;
+        padding: 0;
+    }
 }
