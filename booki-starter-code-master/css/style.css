@@ -24,7 +24,7 @@ h1{
 }
 
 h2{
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .main-container {
@@ -287,7 +287,7 @@ nav {
 }
 
 .afficher-plus{
-     font-size:14px;
+    font-size:14px;
     font-weight: 700;
     margin-top : 20px;
 }
@@ -377,7 +377,7 @@ footer{
     justify-content: space-between;
     padding-right: 300px;
     align-items: flex-start;
-   background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color);
     
    
 }
