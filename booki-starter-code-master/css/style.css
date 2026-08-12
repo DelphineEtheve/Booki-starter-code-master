@@ -376,6 +376,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     padding-right: 300px;
+    align-items: flex-start;
    background-color: var(--main-bg-color);
     
    
@@ -466,14 +467,15 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: auto;
+        padding-right: 100px;
       }
 
     .nav-footer {
         flex: 1 1 30%;
-        min-width: 220px;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: baseline;
         gap: 10px;
     }
 
