@@ -394,6 +394,8 @@ footer{
 /********************* Media queries **************************************/
 /******* Medium devices (tablets, less/equal than 1024px) **********/
 @media (max-width: 1024px) {
+
+/*******header sur tablette***********/
     .filtres{
         align-items: center;
     }
@@ -419,7 +421,7 @@ footer{
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 10px;
     }
-
+/******* Hebergements And Populaires sur tablette***********/
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -450,11 +452,16 @@ footer{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-
+/******* Activités sur tablette ***********/
     .activites .card-content {
         padding: 16px;
     }
 
+       .activites img {
+        width: 100%;
+        height: 150px;
+    }
+/******** Footer sur tablette ***********/
     footer {
         display: flex;
         flex-direction: row;
