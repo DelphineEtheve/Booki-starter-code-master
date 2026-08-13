@@ -225,9 +225,9 @@ nav {
     height: 100%;
     padding: 0 18px;
     color: var(--main-color);
-    border-right: 1px solid var(--filter-bg-color);
+    border-right: 2px solid var(--filter-bg-color);
     background-color: var(--main-bg-color);
-    border-radius: 18px 0px 0px 18px;    
+    border-radius: 18px 0px 0px 18px;  
 }
 
 .filtres {
@@ -252,6 +252,17 @@ nav {
     border-radius: 999px;
     background-color: transparent;
     border: 3px solid var(--main-bg-color);
+}
+
+.fa-info {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid var(--main-bg-color);
+    flex-shrink: 0;
 }
 
 .en-tete-information{
