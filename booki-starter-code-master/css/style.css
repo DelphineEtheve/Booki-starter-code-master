@@ -178,6 +178,7 @@ nav {
     color: black;
     background-color: transparent;
 }
+
 .search-input input::placeholder {
     color: #111;
     opacity: 1;
@@ -241,6 +242,7 @@ nav {
 .choix-filtre:hover{
     background-color: var(--filter-bg-color);
 }
+
 .filtres .choix-filtre:first-child {
    border:none;
 }
@@ -248,6 +250,7 @@ nav {
 .choix-filtre:first-child:hover{
     background-color: transparent;
 }
+
 .choix-filtre {
     font-size:14px;
     font-weight: 700;
@@ -379,6 +382,7 @@ nav {
     margin-top: 40px;
     padding: 40px;
 }
+
 .activites-cards {
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -415,19 +419,19 @@ footer{
     justify-content: space-between;
     padding-right: 300px;
     align-items: flex-start;
-    background-color: var(--main-bg-color);
-    
-   
+    background-color: var(--main-bg-color);   
 }
+
 .nav-footer{
     list-style: none;
     margin: 0;
-    padding-top: 10px;
-    
+    padding-top: 10px; 
 }
+
 .nav-list-footer{
     padding-top: 10px;
 }
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /********************* Media queries **************************************/
@@ -468,6 +472,7 @@ footer{
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 10px;
     }
+
 /******* Hebergements And Populaires sur tablette***********/
     .hebergements-and-populaires {
         flex-direction: column;
@@ -508,18 +513,19 @@ footer{
     .activites .card-content {
         padding: 16px;
     }
-
+    
     .activites img {
         width: 100%;
         height: 220px;
     }
+
 /******** Footer sur tablette ***********/
     footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-right: 200px;
-      }
+    }
 
     .nav-footer {
         flex: 1 1 30%;
@@ -546,6 +552,7 @@ footer{
     h1{
         font-size: 20px;
     }
+
     header {
         display: flex;
         flex-direction: column;
@@ -698,6 +705,7 @@ footer{
     .filtres .choix-filtre:first-child i {
         display: none;
     }
+
     .en-tete-information {
         display: flex;
         align-items: center;
@@ -752,6 +760,7 @@ footer{
         border-radius: 0;
         padding: 0;
     }
+
 /****** Activités sur Mobile ***********/
     .activites {
         margin-top: 60px;
@@ -786,7 +795,6 @@ footer{
         margin: 0;
         padding: 0px;
     }
-
     
     .nav-list-footer {
         display: flex;
