@@ -514,7 +514,7 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-right: 100px;
+        padding-right: 200px;
       }
 
     .nav-footer {
