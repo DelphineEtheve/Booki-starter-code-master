@@ -510,10 +510,19 @@ footer{
         font-size: 13px;
     }
 /******* Activités sur tablette ***********/
-    .activites .card-content {
-        padding: 16px;
+    .activites .card{
+        width: 100%;
+        height: 310px;
     }
-    
+
+    .activites .card-content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 50px;
+        padding-left: 16px;
+    }
+  
     .activites img {
         width: 100%;
         height: 220px;
@@ -773,8 +782,12 @@ footer{
         padding: 0;
     }
 
-    .activites img {
+    .activites .card {
         width: 100%;
+        height: auto;
+    }
+
+    .activites img {
         height: 180px;
     }
 /******** Footer sur Mobile ***********/
